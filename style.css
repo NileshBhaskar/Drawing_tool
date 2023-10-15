@@ -1,21 +1,22 @@
 body {
-  overflow: hidden;
-  /* margin: auto; */
-  /* width: 100vw; */
-  height: 90vh;
-  padding: 0.5rem;
+  box-sizing: border-box;
+  height: 100vh;
   background-color: rgb(245, 250, 255);
+  overflow-y: hidden;
+  justify-content: center;
 }
 .main {
   /* width: 100vw; */
   height: 88%;
+  /* margin-top: 2.5rem; */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  height: 88%;
 }
 
 .App-menu {
-  /* margin-top: ; */
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -29,7 +30,6 @@ body {
   background-color: rgba(255, 255, 255, 0.96);
   border-radius: 0.5rem;
   position: relative;
-
   transition: box-shadow 0.5s ease-in-out;
 }
 
@@ -184,9 +184,8 @@ canvas {
 }
 
 footer {
-  height: 2.25rem;
-  width: 100%;
   display: flex;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   box-sizing: border-box;
@@ -200,7 +199,6 @@ footer {
   justify-content: space-between;
   gap: 0.75rem;
   flex-wrap: wrap;
-  /* padding: 0.5rem; */
 }
 
 .footer-left-left {
@@ -210,13 +208,13 @@ footer {
   gap: 0.75rem;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0 1rem;
   border: 1px solid rgba(205, 202, 202, 0.96);
   background-color: rgba(255, 255, 255, 0.96);
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-  height: 2.95rem;
+  flex-wrap: wrap;
 }
 
 .footer-left-left svg {
@@ -297,6 +295,12 @@ footer {
   background-color: rgba(255, 255, 255, 0.96);
   border-radius: 0.5rem;
   padding: 0.5rem;
+  transition: box-shadow 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.footer-checkmark:hover, .footer-questionicon:hover{
+  box-shadow: 3px 3px 3px grey;
 }
 
 .footer-checkmark svg,
@@ -307,4 +311,33 @@ footer {
 
 .footer-checkmark svg {
   color: rgb(105, 101, 219);
+}
+
+.footer-left-left-minus,
+.footer-left-left-text,
+.footer-left-left-plus {
+  transition: box-shadow 0.5s ease-in-out, scale 0.5s, ease-in-out,
+    boreder-radius 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.footer-left-left-minus:hover,
+.footer-left-left-text:hover,
+.footer-left-left-plus:hover {
+  transform: scale(2, 2);
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 3px;
+}
+
+.footer-left-right-left, .footer-left-right-right {
+  transition: box-shadow 0.5s ease-in-out, scale 0.5s, ease-in-out,
+    boreder-radius 0.5s ease-in-out;
+
+  cursor: pointer;
+}
+
+.footer-left-right-left:hover, .footer-left-right-right:hover {
+  transform: scale(2, 2);
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 3px;
 }
