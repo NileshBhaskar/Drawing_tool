@@ -12,7 +12,7 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  height: 88%;
+  height: 85%;
 }
 
 .App-menu {
@@ -299,7 +299,8 @@ footer {
   cursor: pointer;
 }
 
-.footer-checkmark:hover, .footer-questionicon:hover{
+.footer-checkmark:hover,
+.footer-questionicon:hover {
   box-shadow: 3px 3px 3px grey;
 }
 
@@ -318,7 +319,7 @@ footer {
 .footer-left-left-plus {
   transition: box-shadow 0.5s ease-in-out, scale 0.5s, ease-in-out,
     boreder-radius 0.5s ease-in-out;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .footer-left-left-minus:hover,
@@ -329,14 +330,16 @@ footer {
   border-radius: 3px;
 }
 
-.footer-left-right-left, .footer-left-right-right {
+.footer-left-right-left,
+.footer-left-right-right {
   transition: box-shadow 0.5s ease-in-out, scale 0.5s, ease-in-out,
     boreder-radius 0.5s ease-in-out;
 
   cursor: pointer;
 }
 
-.footer-left-right-left:hover, .footer-left-right-right:hover {
+.footer-left-right-left:hover,
+.footer-left-right-right:hover {
   transform: scale(2, 2);
   box-shadow: 3px 3px 3px grey;
   border-radius: 3px;
