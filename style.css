@@ -212,6 +212,7 @@ footer {
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .footer-left-left svg {
@@ -292,6 +293,12 @@ footer {
   background-color: rgba(255, 255, 255, 0.96);
   border-radius: 0.5rem;
   padding: 0.5rem;
+  transition: box-shadow 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.footer-checkmark:hover, .footer-questionicon:hover{
+  box-shadow: 3px 3px 3px grey;
 }
 
 .footer-checkmark svg,
@@ -302,4 +309,33 @@ footer {
 
 .footer-checkmark svg {
   color: rgb(105, 101, 219);
+}
+
+.footer-left-left-minus,
+.footer-left-left-text,
+.footer-left-left-plus {
+  transition: box-shadow 0.5s ease-in-out, scale 0.5s, ease-in-out,
+    boreder-radius 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.footer-left-left-minus:hover,
+.footer-left-left-text:hover,
+.footer-left-left-plus:hover {
+  transform: scale(2, 2);
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 3px;
+}
+
+.footer-left-right-left, .footer-left-right-right {
+  transition: box-shadow 0.5s ease-in-out, scale 0.5s, ease-in-out,
+    boreder-radius 0.5s ease-in-out;
+
+  cursor: pointer;
+}
+
+.footer-left-right-left:hover, .footer-left-right-right:hover {
+  transform: scale(2, 2);
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 3px;
 }
